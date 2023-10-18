@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h4 id="tag">
+      Created by
+      <span
+        ><a
+          href="https://www.linkedin.com/in/mayank-gupta-752328173/"
+          target="blank"
+          >Mayank Gupta</a
+        ></span
+      >
+      ❤
+    </h4>
+    <h1>StopWatch</h1>
+    <div id="timer">
+      <div class="hour box">
+        <h2>00</h2>
+        <p>hr</p>
+      </div>
+      <div class="minute box">
+        <h2>00</h2>
+        <p>min</p>
+      </div>
+      <div class="second box">
+        <h2>00</h2>
+        <p>sec</p>
+      </div>
+      <div class="milli-second box">
+        <h2>00</h2>
+        <p>milli-sec</p>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button onclick="startStopWatch()">Start</button>
+      <button onclick="addRecords()" id="lap">Lap</button>
+      <button onclick="stopStopWatch()">Stop</button>
+      <button onclick="resetStopWatch()">Reset</button>
+    </div>
+    <div class="records">
+      <h3>Records:</h3>
+      <ul></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
