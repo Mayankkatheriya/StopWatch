@@ -150,17 +150,26 @@ ul{
 }
 li{
     backdrop-filter: blur(5px);
-    background-color: #DE8F5F;
+    background-image: linear-gradient(to right, rgb(250, 206, 149), rgba(241, 140, 45, 0.89));
     padding: 0.5rem;
     border-radius: 16px;
-    color: rgb(250, 208, 208);
+    color: rgb(255, 255, 255);
     text-shadow: 2px 1px 5px black;
     font-size: 1.5rem;
+    position: relative;
 }
 li span{
     font-size: 1.2rem;
     font-weight: 700;
-    color: #f8c12a;
+    color: #181717;
+
+}
+.delete{
+    position: absolute;
+    font-size: 1rem;
+    top: -10px;
+    right: 0;
+    cursor: pointer;
 
 }
 #lap{

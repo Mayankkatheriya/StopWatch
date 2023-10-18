@@ -66,8 +66,21 @@ function addRecords() {
     recordContainer.style.display = "block";
     listCount = String(listCount).padStart("2", "0");
     let li = document.createElement("li");
-    li.innerHTML = `<span>${listCount}.</span> ${hours.innerText}:${minutes.innerText}:${seconds.innerText}:${milliSeconds.innerText}`;
+    li.innerHTML = `<div class = "delete">❌</div><span>${listCount}.</span> ${hours.innerText}:${minutes.innerText}:${seconds.innerText}:${milliSeconds.innerText}`;
     list.appendChild(li);
     listCount++;
+    activateDelete();
+    
+  }
+}
+function activateDelete(){
+  const deleteBtns=[...document.querySelectorAll(".delete")]
+  if(deleteBtns.length==0){
+    recordContainer.style.display = "none"
+  }
+  for(let i=0 ; i<deleteBtns.length ; i++){
+    deleteBtns[i].addEventListener('click', (e)=>{
+      e.target.parentElement.remove();
+    })
   }
 }
