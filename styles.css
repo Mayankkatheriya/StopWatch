@@ -165,9 +165,6 @@ li span{
     color: #181717;
 
 }
-li:hover{
-    transform: scale(1.2);
-}
 .delete{
     position: absolute;
     font-size: 1rem;
